@@ -1,34 +1,30 @@
-// app.config.js
 import 'dotenv/config';
 
 export default {
   expo: {
     name: 'KinetixIQ',
     slug: 'kinetixiq',
+    owner: 'ultraweir',
     sdkVersion: '53.0.0',
     version: '1.0.0',
     orientation: 'portrait',
+    platforms: ['ios', 'android'],
     icon: './assets/icon.png',
-    userInterfaceStyle: 'automatic',
     splash: {
-      image: './assets/splash.png',
+      image: './assets/splash-icon.png',
       resizeMode: 'contain',
-      backgroundColor: '#ffffff'
+      backgroundColor: '#ffffff',
     },
     updates: {
-      fallbackToCacheTimeout: 0
+      fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ['**/*'],
     ios: {
-      supportsTablet: true
+      supportsTablet: true,
     },
     android: {
       package: 'com.ultraweir.kinetixiq',
       versionCode: 1,
-      adaptiveIcon: {
-        foregroundImage: './assets/adaptive-icon.png',
-        backgroundColor: '#FFFFFF'
-      }
     },
     extra: {
       firebaseApiKey: process.env.FIREBASE_API_KEY,
@@ -38,9 +34,8 @@ export default {
       firebaseMessagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.FIREBASE_APP_ID,
       eas: {
-        projectId: '0c3615dc-e995-44da-8046-f6364703f142'
-      }
-    }
-  }
-}
-
+        projectId: '0c3615dc-e995-44da-8046-f6364703f142',
+      },
+    },
+  },
+};
