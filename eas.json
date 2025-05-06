@@ -8,9 +8,7 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
-    },
-    "preview": {
-      "distribution": "internal"
+      }
     },
     "production": {
       "autoIncrement": true
@@ -20,3 +18,4 @@
     "production": {}
   }
 }
+
